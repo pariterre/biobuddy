@@ -3,7 +3,7 @@ from typing import Callable
 import numpy as np
 from enum import Enum
 
-from .protocols import Data
+from .protocols import Data, ModelRealProtocol
 from .via_point_real import ViaPointReal
 
 
@@ -79,17 +79,17 @@ class MuscleReal:
     @staticmethod
     def from_data(
         data: Data,
-        model: "BiomechanicalModelReal",
+        model: ModelRealProtocol,
         name: str,
         muscle_type: MuscleType,
         state_type: MuscleStateType,
         muscle_group: str,
         origin_position_function: Callable[[dict[str, np.ndarray]], np.ndarray],
         insertion_position_function: Callable[[dict[str, np.ndarray]], np.ndarray],
-        optimal_length_function: Callable[["BiomechanicalModelReal", dict[str, np.ndarray]], float],
+        optimal_length_function: Callable[[ModelRealProtocol, dict[str, np.ndarray]], float],
         maximal_force_function: Callable[[dict[str, np.ndarray]], float],
-        tendon_slack_length_function: Callable[["BiomechanicalModelReal", dict[str, np.ndarray]], float],
-        pennation_angle_function: Callable[["BiomechanicalModelReal", dict[str, np.ndarray]], float],
+        tendon_slack_length_function: Callable[[ModelRealProtocol, dict[str, np.ndarray]], float],
+        pennation_angle_function: Callable[[ModelRealProtocol, dict[str, np.ndarray]], float],
         maximal_excitation: float,
     ):
         """

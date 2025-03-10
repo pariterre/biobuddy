@@ -58,3 +58,25 @@ class GenericDynamicModel(Protocol):
         -------
         The xx, yy, zz, (Sagittal, Transverse, Longitudinal) radii of giration
         """
+
+
+class ModelRealProtocol(Protocol):
+    """
+    This is use to evaluate a "real" model (mostly BiomechanicalModelReal) to collapse a function that needs ones
+    It is declare to prevent circular imports of BiomechanicalModelReal
+    """
+
+    pass
+
+
+class CoordinateSystemRealProtocol(Protocol):
+    """
+    This is use to evaluate a "real" coordinate system (mostly SegmentCoordinateSystemReal).
+    It is declare to prevent circular imports of SegmentCoordinateSystemReal
+    """
+
+    @property
+    def transpose(self) -> np.ndarray:
+        """
+        Get the transpose of the coordinate system
+        """

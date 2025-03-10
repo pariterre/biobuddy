@@ -3,7 +3,7 @@ from typing import Callable
 import numpy as np
 
 from .biomechanical_model_real import BiomechanicalModelReal
-from .protocols import Data
+from .protocols import Data, CoordinateSystemRealProtocol
 
 
 class InertiaParametersReal:
@@ -34,7 +34,7 @@ class InertiaParametersReal:
         center_of_mass: Callable[[dict[str, np.ndarray], BiomechanicalModelReal], np.ndarray],
         inertia: Callable[[dict[str, np.ndarray], BiomechanicalModelReal], np.ndarray],
         kinematic_chain: BiomechanicalModelReal,
-        parent_scs: "SegmentCoordinateSystemReal" = None,
+        parent_scs: CoordinateSystemRealProtocol = None,
     ):
         """
         This is a constructor for the InertiaParameterReal class.

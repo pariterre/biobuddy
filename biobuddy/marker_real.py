@@ -3,7 +3,7 @@ from typing import Callable
 import numpy as np
 
 from .biomechanical_model_real import BiomechanicalModelReal
-from .protocols import Data
+from .protocols import Data, CoordinateSystemRealProtocol
 
 
 class MarkerReal:
@@ -44,7 +44,7 @@ class MarkerReal:
         function: Callable[[dict[str, np.ndarray], BiomechanicalModelReal], np.ndarray],
         parent_name: str,
         kinematic_chain: BiomechanicalModelReal,
-        parent_scs: "SegmentCoordinateSystemReal" = None,
+        parent_scs: CoordinateSystemRealProtocol = None,
         is_technical: bool = True,
         is_anatomical: bool = False,
     ):
