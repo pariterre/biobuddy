@@ -1,7 +1,7 @@
 class BiomechanicalModelReal:
     def __init__(self):
         from .segment_real import SegmentReal  # Imported here to prevent from circular imports
-        from .muscle_group import MuscleGroup
+        from ..generic.muscle_group import MuscleGroup
         from .muscle_real import MuscleReal
         from .via_point_real import ViaPointReal
 

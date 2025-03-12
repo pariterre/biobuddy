@@ -2,10 +2,10 @@ from typing import Callable
 
 import numpy as np
 
-from .biomechanical_model_real import BiomechanicalModelReal
-from .inertia_parameters_real import InertiaParametersReal
-from .protocols import Data
-from .segment_coordinate_system_real import SegmentCoordinateSystemReal
+from ...real.biomechanical_model_real import BiomechanicalModelReal
+from ...real.inertia_parameters_real import InertiaParametersReal
+from ...protocols import Data
+from ...real.segment_coordinate_system_real import SegmentCoordinateSystemReal
 
 
 class InertiaParameters:

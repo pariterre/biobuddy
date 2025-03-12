@@ -1,9 +1,9 @@
 from typing import Callable
 
-from .biomechanical_model_real import BiomechanicalModelReal
-from .mesh_real import MeshReal
-from .protocols import Data
-from .segment_coordinate_system_real import SegmentCoordinateSystemReal
+from ..real.biomechanical_model_real import BiomechanicalModelReal
+from ..real.mesh_real import MeshReal
+from ..protocols import Data
+from ..real.segment_coordinate_system_real import SegmentCoordinateSystemReal
 
 
 class Mesh:

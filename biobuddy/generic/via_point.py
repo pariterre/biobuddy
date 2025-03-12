@@ -1,7 +1,7 @@
 from typing import Callable
 
-from .protocols import Data
-from .via_point_real import ViaPointReal
+from ..protocols import Data
+from ..real.via_point_real import ViaPointReal
 
 
 class ViaPoint:

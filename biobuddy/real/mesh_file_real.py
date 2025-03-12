@@ -2,7 +2,7 @@ from typing import Callable
 
 import numpy as np
 
-from .protocols import Data
+from ..protocols import Data
 
 
 class MeshFileReal:

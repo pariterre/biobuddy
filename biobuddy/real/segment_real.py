@@ -1,12 +1,12 @@
 from .inertia_parameters_real import InertiaParametersReal
 from .marker_real import MarkerReal
-from .contact import Contact
+from ..generic.rigidbodies.contact import Contact
 from .mesh_real import MeshReal
 from .mesh_file_real import MeshFileReal
-from .rotations import Rotations
-from .range_of_motion import RangeOfMotion
+from ..rotations import Rotations
+from ..range_of_motion import RangeOfMotion
 from .segment_coordinate_system_real import SegmentCoordinateSystemReal
-from .translations import Translations
+from ..translations import Translations
 
 
 class SegmentReal:

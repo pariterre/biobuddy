@@ -2,8 +2,8 @@ from typing import Callable
 
 import numpy as np
 
-from .protocols import Data
-from .translations import Translations
+from ..protocols import Data
+from ..translations import Translations
 
 
 class ContactReal:

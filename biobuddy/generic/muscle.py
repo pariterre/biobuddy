@@ -1,7 +1,7 @@
 from typing import Callable
 
-from .protocols import Data
-from .muscle_real import MuscleReal, MuscleType, MuscleStateType
+from ..protocols import Data
+from ..real.muscle_real import MuscleReal, MuscleType, MuscleStateType
 
 
 class Muscle:

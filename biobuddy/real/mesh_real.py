@@ -3,7 +3,7 @@ from typing import Callable
 import numpy as np
 
 from .biomechanical_model_real import BiomechanicalModelReal
-from .protocols import Data, CoordinateSystemRealProtocol
+from ..protocols import Data, CoordinateSystemRealProtocol
 
 
 class MeshReal:

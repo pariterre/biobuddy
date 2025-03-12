@@ -1,10 +1,10 @@
 from typing import Callable
 
-from .axis_real import AxisReal
-from .biomechanical_model_real import BiomechanicalModelReal
+from ...real.axis_real import AxisReal
+from ...real.biomechanical_model_real import BiomechanicalModelReal
 from .marker import Marker
-from .protocols import Data
-from .segment_coordinate_system_real import SegmentCoordinateSystemReal
+from ...protocols import Data
+from ...real.segment_coordinate_system_real import SegmentCoordinateSystemReal
 
 
 class Axis:

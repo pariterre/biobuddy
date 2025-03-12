@@ -1,12 +1,12 @@
-from .inertia_parameters import InertiaParameters
-from .marker import Marker
-from .contact import Contact
+from .rigidbodies.inertia_parameters import InertiaParameters
+from .rigidbodies.marker import Marker
+from .rigidbodies.contact import Contact
 from .mesh import Mesh
 from .mesh_file import MeshFile
-from .rotations import Rotations
-from .range_of_motion import RangeOfMotion, Ranges
+from ..rotations import Rotations
+from ..range_of_motion import RangeOfMotion, Ranges
 from .segment_coordinate_system import SegmentCoordinateSystem
-from .translations import Translations
+from ..translations import Translations
 
 
 class Segment:

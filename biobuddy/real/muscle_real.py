@@ -3,7 +3,7 @@ from typing import Callable
 import numpy as np
 from enum import Enum
 
-from .protocols import Data, ModelRealProtocol
+from ..protocols import Data, ModelRealProtocol
 from .via_point_real import ViaPointReal
 
 

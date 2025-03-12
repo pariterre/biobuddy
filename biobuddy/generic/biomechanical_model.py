@@ -1,8 +1,8 @@
-from .protocols import Data
-from .segment_real import SegmentReal
+from ..protocols import Data
+from ..real.segment_real import SegmentReal
 from .muscle_group import MuscleGroup
-from .segment_coordinate_system_real import SegmentCoordinateSystemReal
-from .biomechanical_model_real import BiomechanicalModelReal
+from ..real.segment_coordinate_system_real import SegmentCoordinateSystemReal
+from ..real.biomechanical_model_real import BiomechanicalModelReal
 
 
 class BiomechanicalModel:

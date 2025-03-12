@@ -2,8 +2,8 @@ from typing import Callable
 
 import numpy as np
 
-from .mesh_file_real import MeshFileReal
-from .protocols import Data
+from ..real.mesh_file_real import MeshFileReal
+from ..protocols import Data
 
 
 class MeshFile:

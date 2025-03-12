@@ -1,8 +1,8 @@
 from typing import Callable
 
-from .protocols import Data
-from .translations import Translations
-from .contact_real import ContactReal
+from ...protocols import Data
+from ...translations import Translations
+from ...real.contact_real import ContactReal
 
 
 class Contact:
